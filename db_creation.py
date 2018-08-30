@@ -13,4 +13,10 @@ c.execute('''
 	NAME TEXT NOT NULL,
 	DESCRIPTION TEXT NOT NULL,
 	STATUS TEXT NOT NULL);''')
+
+# insert two test values
+c.execute('''
+	INSERT INTO tasks VALUES (NULL, ?, ?, ?)''', ('sample_task', 'sample description', 'not done'))
+c.execute('''
+	INSERT INTO tasks VALUES (NULL, ?, ?, ?)''', ('another sample task', 'another sample description', 'woohoo not done'))
 conn.commit()
