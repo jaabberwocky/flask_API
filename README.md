@@ -22,3 +22,10 @@ test_password="<your own password>"
 ```bash
 python simpleAPI.py
 ```
+
+
+## TODO
+
+1. Use Row_Factory magic for SQLite3 DB connections
+
+2. Create POST/PUT methods
